@@ -42,44 +42,6 @@ class OneD_Array
     }
 }
 
-class TwoD_Array
-{
-    void multiArrays()
-    {
-        int[][] arr2 = new int[2][3];
-        int[][] arrTwo = {{1,2}, {3,4}, {5,6}};
-
-        arr2[0][0] = 10;
-        arr2[0][1] = 20;
-        arr2[0][2] = 30;
-
-        arr2[1][0] = 40;
-        arr2[1][1] = 50;
-        arr2[1][2] = 60;
-
-//        System.out.println(arrTwo[0][0]);
-//        System.out.println(arrTwo[0][1]);
-//        System.out.println(arrTwo[1][0]);
-//        System.out.println(arrTwo[1][1]);
-//        System.out.println(arrTwo[2][0]);
-//        System.out.println(arrTwo[2][1]);
-        for(int i = 0; i < arrTwo.length; i++)
-        {
-            for(int j = 0; j < arrTwo[i].length; j++)
-            {
-                System.out.println(arrTwo[i][j]);
-            }
-        }
-
-//        System.out.println(arr2[0][0]);
-//        System.out.println(arr2[0][1]);
-//        System.out.println(arr2[0][2]);
-//        System.out.println(arr2[1][0]);
-//        System.out.println(arr2[1][1]);
-//        System.out.println(arr2[1][2]);
-    }
-}
-
 public class ArrayQuestions
 {
     public static void main(String[] args)
