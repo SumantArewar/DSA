@@ -80,16 +80,6 @@ class TwoD_Array
     }
 }
 
-class ThreeD_Array
-{
-    void thirdArray()
-    {
-        int[][][] arr3 = new int[1][2][3];
-        arr3[0][0][0] = 1;
-        System.out.println(arr3[0][0][0]);
-    }
-}
-
 public class ArrayQuestions
 {
     public static void main(String[] args)
