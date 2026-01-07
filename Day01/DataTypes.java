@@ -17,7 +17,7 @@ public class DataTypes
         System.out.println("ch = " + ch1+1); //21
 
         char ch2;
-        ch2 = '97'; // error - java: unclosed character literal
+//        ch2 = '97'; // error - java: unclosed character literal
         System.out.println("ch = " + ch2);
         System.out.println("ch = " + ch2+1);
 
@@ -97,7 +97,7 @@ public class DataTypes
 //        float num2 = num1; //error - java: variable num2 is already defined in method main(java.lang.String[])
         System.out.println(num2);
 
-        double n1 = 90.89D;
+//        double n1 = 90.89D;
         System.out.println(n1);
 //        float n2 = n1; // error - java: incompatible types: possible lossy conversion from double to float
 //        System.out.println(n2);
