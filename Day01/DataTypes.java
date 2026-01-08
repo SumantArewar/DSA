@@ -1,3 +1,5 @@
+package Day01;
+
 import java.util.Scanner;
 
 public class DataTypes
@@ -17,21 +19,22 @@ public class DataTypes
         System.out.println("ch = " + ch1+1); //21
 
         char ch2;
+        ch2 = 97; // error - java: unclosed character literal
 //        ch2 = '97'; // error - java: unclosed character literal
         System.out.println("ch = " + ch2);
         System.out.println("ch = " + ch2+1);
 
-        char ch1 = 65;
-        System.out.println(ch1);
+//        char ch1 = 65;
+//        System.out.println(ch1);
+//
+//        char ch2 = 97;
+//        System.out.println(ch2);
 
-        char ch2 = 97;
-        System.out.println(ch2);
+//        char ch3 = true; // error - java: incompatible types: boolean cannot be converted to char
+//        System.out.println(ch3);
 
-        char ch3 = true; // error - java: incompatible types: boolean cannot be converted to char
-        System.out.println(ch3);
-
-        char ch4 = false; // error - java: incompatible types: boolean cannot be converted to char
-        System.out.println(ch4);
+//        char ch4 = false; // error - java: incompatible types: boolean cannot be converted to char
+//        System.out.println(ch4);
 
 
 
@@ -59,13 +62,14 @@ public class DataTypes
 
 
         //Int Data Type
-        int ch = 65;
-        char ch1 = ch; // error - java: incompatible types: possible lossy conversion from int to char
-        System.out.println(ch);
-        System.out.println(ch1);
+//        int ch = 65;
+//        char ch1 = ch; // error - java: incompatible types: possible lossy conversion from int to char
+//        System.out.println(ch);
+//        System.out.println(ch1);
 
 
         //  Boolean Data Type
+/*
         boolean var = "true"; // error - java: incompatible types: java.lang.String cannot be converted to boolean
 
         boolean v1 = 1; // error - java: incompatible types: int cannot be converted to boolean,
@@ -78,8 +82,8 @@ public class DataTypes
         char c4 = '1'; // error - java: incompatible types: java.lang.String cannot be converted to char
         System.out.println(c4);
         char c3 = "1"; // error - java: incompatible types: java.lang.String cannot be converted to char
-//        byte b = 128; // error - java: incompatible types: possible lossy conversion from int to byte
-
+        byte b = 128; // error - java: incompatible types: possible lossy conversion from int to byte
+*/
 
         // Float and Double Data Type
         int numInt = 10;
