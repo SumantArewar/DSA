@@ -1,4 +1,4 @@
-package Day05;
+package Day06;
 
 public class Arrays {
     public static void main(String[] args) {
