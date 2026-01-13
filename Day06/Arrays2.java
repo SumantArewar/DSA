@@ -1,5 +1,6 @@
 package Day06;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Arrays2 {
@@ -34,27 +35,50 @@ public class Arrays2 {
         return countGreater;
     }
 
-    // Find the number of elements strictly greater than x
+    // Check if the Given Array is Sorted or Not
     static boolean IsSorted(int[] arr){
-        boolean isSorted = false;
+        boolean isSorted = true;
         for(int i = 0; i < arr.length - 1; i++){
-            if(arr[i] <= arr[i+1])
-                isSorted = true;
+            if(arr[i] > arr[i+1]){
+                isSorted = false;
+                break;
+            }
         }
         return isSorted;
+    }
+
+    // Find Smallest & Largest Elements of the Given Array
+    static int[] FindSmallestAndLargest(int[] arr){
+        int smallest = Integer.MAX_VALUE;
+        int largest = Integer.MIN_VALUE;
+        int[] Array2 = new int[2];
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i] > largest){
+                largest = arr[i];
+            }
+            if(arr[i] < smallest){
+                smallest = arr[i];
+            }
+        }
+        Array2[0] = smallest;
+        Array2[1] = largest;
+        return Array2;
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int[] arr = {1, 2, 3, 4, 3, 2, 1, 2, 7, 2};
+        int[] arr = {1, 2, 3, 4, 3, 2, 1, 2, 7, 2, 9};
+        int[] arr2 = {1, 2, 2, 3, 3, 3, 4, 6, 7, 8};
         int totalCount = CountOccurrences(arr, n);
         System.out.println(totalCount);
         int lastIndex = FindLastOccurrence(arr, n);
         System.out.println(lastIndex);
         int countStrictlyGreater = StrictlyGreater(arr, n);
         System.out.println(countStrictlyGreater);
-        boolean isSorted = IsSorted(arr);
+        boolean isSorted = IsSorted(arr2);
         System.out.println(isSorted);
+        int[] arrayPair = FindSmallestAndLargest(arr2);
+        System.out.println(Arrays.toString(arrayPair));
     }
 }
