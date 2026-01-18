@@ -7,6 +7,7 @@ public class BinarySearchDemo {
         int start = 0;
         int end = n-1;
 
+        // Condition till we get our target
         while(start <= end){
             int mid = (start + end)/2;
             if(arr[mid] == x){
