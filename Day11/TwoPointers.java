@@ -23,13 +23,13 @@ public class TwoPointers {
         int[] ans = new int[n];
         int k = 0;
         while(start <= end){
-            if(Math.abs(arr[start]) < Math.abs(arr[end])){
-                arr[k++] = arr[end] * arr[end];
-                end--;
+            if(Math.abs(arr[start]) > Math.abs(arr[end])){
+                ans[k++] = arr[start] * arr[start];
+                start++;
             }
             else{
-                arr[k++] = arr[start] * arr[start];
-                start++;
+                ans[k++] = arr[end] * arr[end];
+                end--;
             }
         }
         return ans;
@@ -102,6 +102,7 @@ public class TwoPointers {
 //        System.out.println(Arrays.toString(arr));
 //        SortEvenOdd(arr2);
 //        PrintArray(arr2);
+        PrintArray(arr2);
         int[] sortedSquares = SquareOfSortedArray(arr2);
         PrintArray(sortedSquares);
    }
