@@ -73,7 +73,7 @@ public class Arrays6 {
 //            System.out.println("Sum of this range is - " + ans);
 //        }
 
-        boolean isPossible = IsEqualSum(arr);
+        boolean isPossible = IsEqualSum(arr); 
         System.out.println(isPossible);
     }
 }
