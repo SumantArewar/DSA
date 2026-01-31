@@ -1,6 +1,9 @@
 package Day16;
 
 public class Arrays2DProblems3 {
+
+    // Sum of Rectangle (Brute Force Approach)
+
     public static void main(String[] args) {
         int[][] arr = {
                 {1, 2, 3, 4, 5},
