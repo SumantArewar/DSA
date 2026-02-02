@@ -4,6 +4,8 @@ public class Arrays2DProblems3 {
 
     // Sum of Rectangle (Brute Force Approach)
 
+    // Sum of Rectangle (Precalculating Horizontal Sum of each row)
+
     public static void main(String[] args) {
         int[][] arr = {
                 {1, 2, 3, 4, 5},
