@@ -13,8 +13,16 @@ public class Arrays2DProblems3 {
         return sum;
     }
     // Sum of Rectangle (Precalculating Horizontal Sum of each row)
-//yet to add
-
+    static int findSum2(int[][] arr, int l1, int r1, int l2, int r2){
+        int sum = 0;
+        for(int i = l1; i <= l2; i++){
+            if(r1 >=1 ){
+                sum += arr[i][r2];
+            }ELSE
+                sum += arr[i][r2];
+        }
+        return sum;
+    }
     // Sum of Rectangle (Prefix Sum over both Rows & Columns)
 //yet to add
     public static void main(String[] args) {
