@@ -7,13 +7,12 @@ import java.util.Scanner;
 public class Arrays2DProblems {
 
     //Pascal's Triangle
-    static List<List<Integer>> PascalTriangle(int n){
+    static void PascalTriangle(int n){
         int[][] arr = new int[n][];
 //        arr[0][0] = 1;
 //        arr[1][0] = 1;
 //        arr[0][1] = 1;
         for(int i = 0; i < n; i++){
-            ArrayList[i] = new List[i+1]
             arr[i] = new int[i+1];
             for(int j = 0; j <= i; j++) {
                 if( j == 0 || j == i){
