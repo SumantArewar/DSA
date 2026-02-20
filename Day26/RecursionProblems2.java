@@ -9,6 +9,7 @@ public class RecursionProblems2 {
         }
         return n % 10 + sumOfDigits(n/10);
     }
+// Remaining methods Yet to add 
     public static void main(String[] args) {
         int sum = sumOfDigits(12345);
         System.out.println("Sum of digits is - " + sum);
