@@ -22,16 +22,15 @@ public class RecursionProblems {
         if(n == 1){
             return 1;
         }
-
         //recursive work
         //self work
-        return n + factorial(n-1);
+        return fibonacci(n-1) + fibonacci(n-2);
     }
 
     public static void main(String[] args) {
 //        int factorial = factorial(5);
 //        System.out.println(factorial);
-        int fibonacci = fibonacci(5);
+        int fibonacci = fibonacci(6);
         System.out.println(fibonacci);
     }
 }

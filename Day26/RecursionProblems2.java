@@ -5,7 +5,7 @@ public class RecursionProblems2 {
         if(n <= 0) return 0;
         return n % 10 + sumOfDigits(n/10);
     }
-<<<<<<< HEAD
+
     static int countOfDigits(int n, int count){
         if(n <= 0) return count;
         return countOfDigits(n/10, count+1);
@@ -23,12 +23,6 @@ public class RecursionProblems2 {
         return p * smallPow * smallPow;
     }
 
-=======
-// Remaining methods Yet to add
-
-// Solved Problems 3 as well 
- 
->>>>>>> 879687a36f0998a0e1064f4266d24a9201602ec4
     public static void main(String[] args) {
         int sum = sumOfDigits(12345);
         System.out.println("Sum of digits is - " + sum);
