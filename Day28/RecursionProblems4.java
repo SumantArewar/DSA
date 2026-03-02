@@ -24,11 +24,20 @@ public class RecursionProblems4 {
         GCD(x-1, y-1, ans);
         return ans;
     }
+
+    // Find GCD2 - Euclid's Algorithm
+    static int GCD2(int x, int y){
+        if(y == 0) return x;
+        return GCD2(y, x % y);
+    }
+
     public static void main(String[] args) {
-        int gcd1 = GCD1(4, 8);
-        System.out.println(gcd1);
-        int gcd = GCD(7, 49, 1);
-        System.out.println(gcd);
+//        int gcd1 = GCD1(4, 8);
+//        System.out.println(gcd1);
+//        int gcd = GCD(7, 49, 1);
+//        System.out.println(gcd);
+        int gcd2 = GCD2(12, 16);
+        System.out.println(gcd2);
     }
 
 }
