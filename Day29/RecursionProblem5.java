@@ -1,22 +1,22 @@
 package Day29;
 
 public class RecursionProblem5 {
-    static int printMax(int[] arr, int i){
-        int max = Integer.MIN_VALUE;
-//        System.out.println(max);
-        if(arr[i] < arr[i-1]) max = arr[i-1];
-        if(i-1 == 0) return max;
-        printMax(arr, i-1);
-        return max;
+    static int printMax(int[] arr, int idx){
+        if(idx == arr.length-1) return  arr[idx];
+        int smallAns = printMax(arr, idx+1);
+        return Math.max(arr[idx], smallAns);
     }
 
-// yet to add remaining methods 
-
-// Recursion 6 is yet to add 
+    static int SumOfElements(int[] arr, int i){
+        if(i == arr.length) return 0;
+        return SumOfElements(arr, i+1)+ arr[i];
+    }
 
     public static void main(String[] args) {
         int[] arr = {1, 6, 3, 4, 5, 8};
-        int maxValue = printMax(arr, 4);
+        int maxValue = printMax(arr, 0);
         System.out.println(maxValue);
+        int sum = SumOfElements(arr, 0);
+        System.out.println(sum);
     }
 }
