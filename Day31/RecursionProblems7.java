@@ -21,7 +21,7 @@ public class RecursionProblems7 {
         String ss = "abcd";
         String Ans = removeOccurrences(s, 0);
         String Ans2 = reverseString(ss, 0);
-//        System.out.println(Ans);
+        System.out.println(Ans);
         System.out.println(Ans2);
     }
 }
