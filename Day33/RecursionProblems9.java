@@ -16,5 +16,7 @@ public class RecursionProblems9 {
         int[] arr = {10, 30, 40, 20};
         int minCostOfFrogJump = minCost(arr, arr.length, 0);
         System.out.println(minCostOfFrogJump);
+
+// Adding.. Problem 2 
     }
 }
